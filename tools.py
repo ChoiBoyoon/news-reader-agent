@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 import time
 from bs4 import BeautifulSoup
 
-search_tool = SerperDevTool()
+search_tool = SerperDevTool() #n_results 파라미터로 읽어오는 결과 수 조절 가능. ex. n_results=30
 
 @tool
 def scrape_tool(url: str) -> str:
